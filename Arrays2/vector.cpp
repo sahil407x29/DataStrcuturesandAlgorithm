@@ -1,15 +1,15 @@
-// #include <iostream>
-// #include <limits.h>
-// #include <vector>
-// using namespace std;
-// int findUnique(vector<int> arr) {
-//   int ans = 0;
-//   for (int i = 0; i < arr.size(); i++) {
-//     ans = ans ^ arr[i];
-//   }
-//   return ans;
-// }
-// int main() {
+#include <iostream>
+#include <limits.h>
+#include <vector>
+using namespace std;
+int findUnique(vector<int> arr) {
+  int ans = 0;
+  for (int i = 0; i < arr.size(); i++) {
+    ans = ans ^ arr[i];
+  }
+  return ans;
+}
+int main() {
   // vector<int> Arr(15,-3);
 
   // int ans = (sizeof(Arr)/sizeof(int));
@@ -152,26 +152,26 @@
 //     }
 //   }
 
- //  vector<int> arr{0,1,0,1,1,0,1,0,1,1};
+  vector<int> arr{0,1,0,1,1,0,1,0,1,1};
 
- //  int start = 0;
- //  int end = arr.size()-1;
- //  int i = 0;
- //   while(i !=end){
- //     if(arr[i] == 0){
- //       swap (arr[start],arr[i]);
- //       start++;
- //       i++;
- //     }
- //     else {
- //       swap(arr[end],arr[i]);
- //       end--;
- //     }
- //   }
+  int start = 0;
+  int end = arr.size()-1;
+  int i = 0;
+   while(i !=end){
+     if(arr[i] == 0){
+       swap (arr[start],arr[i]);
+       start++;
+       i++;
+     }
+     else {
+       swap(arr[end],arr[i]);
+       end--;
+     }
+   }
 
- //  for(auto value : arr){
- //    cout << value << " ";
- //  }
+  for(auto value : arr){
+    cout << value << " ";
+  }
 
   
- // }
+ }
